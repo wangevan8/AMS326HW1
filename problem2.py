@@ -6,11 +6,11 @@ from scipy.interpolate import lagrange
 t = np.array([1, 2, 3, 4, 5])
 y = np.array([412, 407, 397, 398, 417])
 
-# (1) Polynomial interpolation using Lagrange method
+# (1) Polynomial interpolation using Lagrange
 poly = lagrange(t, y)
 P4_at_6 = np.polyval(poly, 6)
 
-# Display the polynomial coefficients and result
+# Results
 print("Polynomial Interpolation:")
 print(f"P4(t) coefficients: {poly.coef}")
 print(f"P4(6) = {P4_at_6}")
@@ -25,7 +25,7 @@ def Q2(t):
 
 Q2_at_6 = Q2(6)
 
-# Display the quadratic fit coefficients and result
+# Results
 print("\nQuadratic Fit:")
 print(f"Q2(t) = {a0:.1f} + {a1:.1f}t + {a2:.1f}t²")
 print(f"Q2(6) = {Q2_at_6:.1f}")
